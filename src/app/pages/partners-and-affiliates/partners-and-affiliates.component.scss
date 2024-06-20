@@ -1,0 +1,432 @@
+.partners {
+  .how-to {
+    padding: 0;
+    width: 100%;
+    .content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+
+      .left {
+        padding: 0 120px;
+        width: 50%;
+        h3 {
+          font-size: 40px;
+          font-family: f-bold;
+          margin: 0 0 16px;
+        }
+        p {
+          font-size: 20px;
+          line-height: 1.25;
+          margin: 0 0 16px;
+          font-weight: bold;
+        }
+        a {
+          font-size: 20px;
+          color: #3b5999;
+        }
+        .btn-primary {
+          height: 56px;
+          font-family: f-bold;
+          font-size: 20px !important;
+          background-color: #3b5999 !important;
+          border: none;
+          margin: 16px 0 0;
+        }
+      }
+      .right {
+        background-color: #5374b9;
+        min-height: 800px;
+        width: 50%;
+        background-image: url(/assets/images/jpg/home-4.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  .section-pub {
+    width: 100%;
+    //background: linear-gradient(90deg, #3b5999, #000000);
+    padding: 64px 0;
+    background-image: url(/assets/images/jpg/send-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .content {
+      max-width: 1600px;
+      margin: auto;
+      width: 100%;
+      padding: 0 120px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10%;
+      justify-items: center;
+      .left {
+        font-size: 62px;
+        font-family: f-bold;
+        line-height: 1.15;
+        color: #ffffff;
+      }
+    }
+  }
+  .why-us {
+    padding: 50px 0px;
+    width: 100%;
+    background: linear-gradient(90deg, #3b5999, #0f285f);
+    .content {
+      padding: 0 120px;
+      width: 100%;
+      max-width: 1600px;
+      margin: auto;
+      h2 {
+        font-size: 40px;
+        margin: 0 0 32px;
+        font-family: f-bold;
+        text-align: center;
+        color: #ffffff;
+      }
+      .line-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 80px;
+        .block {
+          text-align: center;
+          img {
+            width: 64px;
+            height: 64px;
+            margin: 0 0 16px;
+          }
+          h2 {
+            font-size: 32px;
+            font-family: f-bold;
+            color: #ffffff;
+            margin: 0 0 8px;
+          }
+          p {
+            font-size: 16px;
+            color: #ffffff;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .how-to-send-money {
+    padding: 64px 0;
+    max-width: 1600px;
+    margin: auto;
+    .content {
+      padding: 0 64px;
+      h2 {
+        font-size: 32px;
+        font-family: f-bold;
+        color: #000000;
+        margin: 0 0 16px;
+        text-align: center;
+      }
+      .block {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        .card {
+          width: 100%;
+          height: fit-content;
+          background-color: #f3f5ff;
+          padding: 24px;
+          border-radius: 8px;
+          display: grid;
+          border: none;
+          justify-items: center;
+          text-align: center;
+          img {
+            width: 100%;
+            height: auto;
+            margin: 0 0 16px;
+          }
+          h3 {
+            font-size: 20px;
+            color: #3b5999;
+            font-family: f-bold;
+          }
+          p {
+            font-size: 16px;
+            margin: 0;
+            font-weight: bold;
+            line-height: 1.25;
+            a {
+              color: #3b5999;
+              font-family: f-bold;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+  .content-end {
+    .why-us {
+      padding: 64px 0px;
+      width: 100%;
+      background: #5374b9;
+      .content {
+        padding: 0 120px;
+        width: 100%;
+        max-width: 1600px;
+        margin: auto;
+        h2 {
+          font-size: 40px;
+          margin: 0 0 32px;
+          font-family: f-bold;
+          text-align: center;
+          color: #ffffff;
+        }
+        .line-block {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 20px;
+          .block {
+            text-align: center;
+            img {
+              width: 100%;
+              height: auto;
+              margin: 0 0 16px;
+            }
+            h2 {
+              font-size: 32px;
+              font-family: f-bold;
+              color: #ffffff;
+              margin: 0 0 8px;
+            }
+            p {
+              font-size: 16px;
+              color: #ffffff;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+    .faq {
+      padding: 24px 0px 64px;
+      background-color: #5374b9;
+      width: 100%;
+      .content {
+        padding: 0px 120px;
+        width: 100%;
+        text-align: center;
+        max-width: 1600px;
+        margin: auto;
+        h2 {
+          font-size: 40px;
+          font-family: f-bold;
+          margin: 0 0 24px;
+          color: #ffffff;
+        }
+        p {
+          font-size: 16px;
+          font-weight: bold;
+          margin: 0 0 24px;
+          color: #ffffff;
+        }
+        .img-faq {
+          width: 100%;
+          height: 400px;
+          border-radius: 8px;
+          background: linear-gradient(90deg, #ede46a, #49c56f);
+          margin: 0 0 24px;
+        }
+        .accordion {
+          margin: 0 0 24px;
+          .accordion-item {
+            border: none;
+          }
+          .accordion-header {
+            margin: 0;
+            .accordion-button {
+              font-weight: bold;
+            }
+            .accordion-button::after {
+              background-image: url(/assets/images/svg/plus-lg.svg);
+            }
+            .accordion-button:not(.collapsed) {
+              background-color: #ffffff;
+              border-radius: 0 !important;
+              border-top-right-radius: 5px !important;
+              border-top-left-radius: 5px !important;
+              border: none;
+            }
+            .accordion-button:not(.collapsed)::after {
+              background-image: url(/assets/images/svg/dash-lg.svg);
+            }
+          }
+          .accordion-collapse {
+            .accordion-body {
+              border-left: solid 4px #3b5999;
+              text-align: left;
+              background-color: #eeeeee;
+            }
+          }
+        }
+        .btn-light {
+          font-size: 20px !important;
+          font-family: f-bold;
+          width: 350px;
+          margin: auto;
+          color: #3b5999;
+          border: none;
+          &:hover {
+            color: #ffffff;
+            background-color: #1c3467;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .partners .how-to {
+    padding: 0;
+  }
+  .partners .how-to .content {
+    width: 100%;
+    display: grid;
+    align-items: center;
+  }
+  .partners .how-to .content .right {
+    min-height: 150px;
+    width: 100%;
+  }
+  .partners .how-to .content .left {
+    padding: 16px 20px;
+    width: 100%;
+  }
+  .partners .section-pub .content {
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10%;
+    justify-items: center;
+  }
+  .partners .section-pub .content .left {
+    font-size: 28px;
+    font-family: f-bold;
+    line-height: 1.15;
+    color: #ffffff;
+  }
+  .partners .why-us .content {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .partners .why-us .content h2 {
+    font-size: 32px;
+  }
+  .partners .why-us .content .line-block {
+    grid-template-columns: 1fr;
+  }
+  .partners .how-to-send-money .content {
+    padding: 0 20px;
+  }
+  .partners .how-to-send-money .content .block {
+    grid-template-columns: 1fr;
+  }
+  .partners .how-to-send-money .content .block .card {
+    justify-items: start;
+    text-align: left;
+  }
+  .partners .how-to-send-money .content .block .card img {
+    display: none;
+  }
+  .partners .content-end .why-us .content {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .partners .content-end .why-us .content h2 {
+    font-size: 32px;
+  }
+  .partners .content-end .why-us .content .line-block {
+    grid-template-columns: 1fr;
+  }
+  .partners .content-end .faq .content {
+    padding: 0px 20px;
+  }
+  .partners .content-end .faq .content h2 {
+    font-size: 32px;
+  }
+  .partners .content-end .faq .content .btn-light {
+    width: 100%;
+  }
+  .partners .how-to .content .left .btn-primary {
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .partners .how-to {
+    padding: 0;
+  }
+  .partners .how-to .content {
+    width: 100%;
+    display: grid;
+    align-items: center;
+  }
+  .partners .how-to .content .right {
+    min-height: 150px;
+    width: 100%;
+  }
+  .partners .how-to .content .left {
+    padding: 16px 20px;
+    width: 100%;
+  }
+  .partners .section-pub .content {
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10%;
+    justify-items: center;
+  }
+  .partners .section-pub .content .left {
+    font-size: 28px;
+    font-family: f-bold;
+    line-height: 1.15;
+    color: #ffffff;
+  }
+  .partners .why-us .content {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .partners .why-us .content h2 {
+    font-size: 32px;
+  }
+  .partners .why-us .content .line-block {
+    grid-template-columns: 1fr;
+  }
+  .partners .how-to-send-money .content {
+    padding: 0 20px;
+  }
+  .partners .how-to-send-money .content .block {
+    grid-template-columns: 1fr;
+  }
+  .partners .how-to-send-money .content .block .card {
+    justify-items: start;
+    text-align: left;
+  }
+  .partners .how-to-send-money .content .block .card img {
+    display: none;
+  }
+  .partners .content-end .why-us .content {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .partners .content-end .why-us .content h2 {
+    font-size: 32px;
+  }
+  .partners .content-end .why-us .content .line-block {
+    grid-template-columns: 1fr;
+  }
+  .partners .how-to .content .left .btn-primary {
+    height: auto; 
+}
+}

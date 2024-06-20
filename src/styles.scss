@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@font-face {
+  font-family: f-normal;
+  src: url(assets/fonts/gilroy.otf);
+}
+@font-face {
+  font-family: f-bold;
+  src: url(assets/fonts/gilroy-bold.otf);
+}
+html,
+body {
+  * {
+    font-family: f-normal;
+  }
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+button,
+select {
+  border-radius: 4px !important;
+  font-size: 16px !important;
+  padding: 0.625rem;
+  &:focus {
+    box-shadow: none !important;
+  }
+  img {
+    width: 25px !important;
+    height: 25px !important;
+  }
+  &.form-select {
+    --bs-form-select-bg-img: url(assets/images/svg/chevron-down.svg);
+    background-size: 16px 16px;
+  }
+}
+input {
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+.icon {
+    width: 20px;
+    height: 20px;
+}

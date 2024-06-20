@@ -1,0 +1,323 @@
+.about {
+  width: 100%;
+  .pub {
+    padding: 100px 0px;
+    width: 100%;
+    background-color: #0c1023;
+    background-image: url(/assets/images/jpg/how-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .content {
+      padding: 0 120px;
+      width: 100%;
+      text-align: center;
+      max-width: 1600px;
+      margin: auto;
+      display: grid;
+      justify-items: center;
+      h1 {
+        font-size: 56px;
+        color: #ffffff;
+        font-family: f-bold;
+        line-height: 1.25;
+        text-shadow: 0 0 10px #00000091;
+        margin: 0 0 32px;
+      }
+      h3 {
+        font-size: 32px;
+        color: #ffffff;
+        text-shadow: 0 0 10px #00000091;
+        font-family: f-bold;
+        line-height: 1.25;
+        margin: 0 0 32px;
+      }
+      p {
+        font-size: 20px;
+        color: #ffffff;
+        text-shadow: 0 0 10px #00000091;
+      }
+    }
+    &.bg-white {
+      background: #ffffff;
+      .content {
+        h3,
+        p {
+          color: #000000;
+          font-weight: bold;
+          margin: 0 0 16px;
+          line-height: 1.25;
+          text-shadow: none;
+        }
+        .btn-light {
+          background-color: #3b5999;
+          font-size: 20px !important;
+          color: #ffffff;
+          height: 56px;
+          font-family: f-bold;
+          margin: 0 0 16px;
+        }
+        .btn-link {
+          font-size: 20px !important;
+          color: #3b5999;
+          height: 56px;
+          text-decoration: none;
+          font-weight: bold;
+          margin: 0 0 16px;
+          &:hover {
+            background-color: #0c1023;
+            color: #ffffff;
+            border-radius: 0 !important;
+          }
+        }
+      }
+    }
+  }
+  .how-to {
+    padding: 0;
+    width: 100%;
+    .content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+
+      .left {
+        padding: 0 120px;
+        width: 50%;
+        h3 {
+          font-size: 32px;
+          font-family: f-bold;
+          margin: 0 0 16px;
+        }
+        p {
+          font-size: 20px;
+          line-height: 1.25;
+          margin: 0 0 16px;
+          font-weight: bold;
+        }
+      }
+      .right {
+        background-color: #5374b9;
+        min-height: 800px;
+        width: 50%;
+        height: 900px;
+        background-image: url(/assets/images/jpg/about-1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  .section-stat-resumed {
+    padding: 64px 0;
+    width: 100%;
+    background-color: #3b5999;
+    .content {
+      padding: 0 120px;
+      width: 100%;
+      max-width: 1600px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 10px;
+      justify-content: center;
+      text-align: center;
+      img {
+        width: 52px;
+        height: 52px;
+        margin: 0 auto 16px;
+      }
+      h2 {
+        font-size: 32px;
+        color: #ffffff;
+        font-family: f-bold;
+        line-height: 1.25;
+        margin: 0 0 10px;
+      }
+      p {
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: bold;
+      }
+    }
+  }
+  .app-section {
+    padding: 104px 0px;
+    width: 100%;
+    background-color: #e9fde9;
+    .content {
+      padding: 0px 120px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      max-width: 1600px;
+      margin: auto;
+      .left {
+        display: flex;
+        justify-content: center;
+      }
+      .right {
+        h2 {
+          font-size: 32px;
+          font-family: f-bold;
+          margin: 0 0 8px;
+          line-height: 1.25;
+        }
+        p {
+          font-size: 20px;
+          font-weight: bold;
+          margin: 0 0 32px;
+          line-height: 1.25;
+        }
+        .download_app {
+          display: flex;
+          gap: 20px;
+          .btn-link {
+            text-decoration: none;
+            padding: 0 !important;
+            img {
+              width: 135px !important;
+              height: 40px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about .pub {
+    padding: 40px 0px;
+  }
+  .about .pub .content {
+    padding: 0 50px;
+  }
+  .about .pub .content h1 {
+    font-size: 28px;
+  }
+  .about .how-to {
+    padding: 0;
+  }
+  .about .how-to .content {
+    width: 100%;
+    display: grid;
+    align-items: center;
+  }
+  .about .how-to .content .right {
+    min-height: 150px;
+    width: 100%;
+  }
+  .about .how-to .content .left {
+    padding: 16px 20px;
+    width: 100%;
+  }
+  .about .section-stat-resumed .content {
+    padding: 0 20px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+  .about .app-section {
+    padding: 24px 0px 60px;
+  }
+  .about .app-section .content {
+    padding: 0px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column-reverse;
+    .left {
+      margin: auto;
+      img {
+        width: 100%;
+        height: 460px;
+      }
+    }
+  }
+  .about .app-section .content .right .download_app {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .about .app-section .content .right h2 {
+    text-align: center;
+  }
+  .about .app-section .content .right p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .about .pub {
+    padding: 40px 0px;
+  }
+  .about .pub .content {
+    padding: 0 50px;
+  }
+  .about .pub .content h1 {
+    font-size: 28px;
+  }
+  .about .how-to {
+    padding: 0;
+  }
+  .about .how-to .content {
+    width: 100%;
+    display: grid;
+    align-items: center;
+  }
+  .about .how-to .content .right {
+    min-height: 150px;
+    width: 100%;
+  }
+  .about .how-to .content .left {
+    padding: 16px 20px;
+    width: 100%;
+  }
+  .about .section-stat-resumed .content {
+    padding: 0 20px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+  .about .app-section {
+    padding: 24px 0px 60px;
+  }
+  .about .app-section .content {
+    padding: 0px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column-reverse;
+    .left {
+      margin: auto;
+      img {
+        width: 100%;
+        height: 460px;
+      }
+    }
+  }
+  .about .app-section .content .right .download_app {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .about .app-section .content .right h2 {
+    text-align: center;
+  }
+  .about .app-section .content .right p {
+    text-align: center;
+  }
+}

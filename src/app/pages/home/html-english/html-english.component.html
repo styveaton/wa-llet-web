@@ -1,0 +1,802 @@
+<!-- <p><button class="btn btn-primary" (click)="openViewCommentCaMarche()">Comment ca marche</button></p>
+<p><button class="btn btn-secondary" (click)="openViewAide()">Aide</button></p>
+<p><button class="btn btn-danger" (click)="openViewLogin()">Se connecter</button></p>
+<p><button class="btn btn-warning" (click)="openViewRegistration()">S'inscrire</button></p>
+ -->
+<div class="home"  >
+  <div class="hero-section">
+    <div class="content-hero">
+      <div class="left">
+        <h1>International money transfer</h1>
+        <b>
+          Benefit from express, flexible and secure money transfers between the United States and Cameroon.
+          Opt for our money transfer services between these destinations and save time and money.
+        </b>        
+        <button class="btn btn-primary" (click)="openViewmobile()">Send money</button>
+<!-- hide-->
+        <div class="licence" style="display: none;">
+          <img src="assets/images/svg/logo-white-trustpilot-copy.svg" alt="" />
+          <div class="lib-licence">
+            <div class="separator">
+              <span>Bien</span>
+              <span>Plus de 82 565 avis</span>
+            </div>
+          </div>
+        </div>
+<!-- hide-->
+      </div>
+      <div class="right">
+        <app-transaction-box></app-transaction-box>
+      </div>
+    </div>
+  </div>
+  <div class="zone-typ">
+    <div class="content">
+      <h2>Money transfer options to Cameroon</h2>
+      <p>
+        The cost and speed of a money transfer depend on the method of receipt.
+        Wa-llet currently only allows money to be received in Cameroon.
+      </p>
+      <div class="slick-slider">
+        <div class="controls">
+          <button class="btn btn-link">
+            <img src="assets/images/svg/arrow-left-short.svg" alt="" />
+          </button>
+          <button class="btn btn-link">
+            <img src="assets/images/svg/arrow-right-short.svg" alt="" />
+          </button>
+        </div>
+        <div class="s-slides">
+          <div class="content">
+            <div class="card">
+              <p class="c-title">MTN Mobile Money</p>
+              <p class="c-content">
+                Transfer instantly to the recipient's Mtn Cameroon telephone number.
+              </p>
+              <button class="btn btn-primary">More information</button>
+            </div>
+            <!--div class="card"  style="display: none;">
+              <p class="c-title">Virement bancaire</p>
+              <p class="c-content">
+                Envoyez de l'argent directement sur un compte bancaire. Il vous
+                suffit de connaître les informations du bénéficiaire.
+              </p>
+              <button class="btn btn-primary">En savoir plus</button>
+            </div>
+            <div class="card"  style="display: none;">
+              <p class="c-title">Retrait d'espèces</p>
+              <p class="c-content">
+                Envoyez de l'argent que votre bénéficiaire peut récupérer en
+                espèces dans l'un de nos points de retrait.
+              </p>
+              <button class="btn btn-primary">En savoir plus</button>
+            </div-->
+            <div class="card">
+              <p class="c-title">Orange Money</p>
+              <p class="c-content">
+                Transfer instantly to the beneficiary's Orange Cameroon telephone number.
+              </p>
+              <button class="btn btn-primary">More information</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="how-to">
+    <div class="content">
+      
+      <div class="left">
+        <h3>How do you transfer money?</h3>
+        <ul>
+          <li>
+            <b>Open an account</b> Register easily with your phone number
+             on our application. Opt for security by choosing a complex password.
+          </li>
+          <li>
+            <b>Verifying your data</b> To ensure enhanced security, we will verify your identity.
+             This check only takes a few minutes!
+          </li>
+          <li>
+            <b>Consult our Wa-llet offers</b> Our subscription offers give you detailed information on
+            the different annual ceilings that will be possible for you
+          </li>
+          <li>
+            <b>Recharge your Wa-llet Account</b> Once you have viewed our offers, carry out from your bank account
+            a Zelle transaction of the desired amount and you will be automatically credited to your Wa-llet account
+          </li>
+          <li>
+            <b>Proceed with the transfer</b> Select the reception method for your beneficiary.
+             Next, enter the amount you want to send. Fees and exchange rates are clearly communicated from the start.
+          </li>
+          <li>
+            <b>Provide beneficiary contact details</b> Beneficiary information is important
+            and must be correct, then validate and confirm, your beneficiary and you will receive messages from
+            confirmation
+          </li>
+        </ul>
+      </div>
+      <div class="right"></div>
+    </div>
+  </div>
+  <div class="zone-promo-code" style="margin-top: 60px;">
+    <div class="content">
+      <div class="left">
+        <img class="img-gift" src="assets/images/svg/gift.svg" alt="" />
+        <h2>New member?</h2>
+        <p>
+          Wa-llet offers you the subscription for free
+          <span>WELCOME</span> valid for 03 months worth $6000.
+        </p>
+        <button class="btn btn-light"  (click)="openViewmobile()">Send now</button>
+     
+      </div>
+      <div class="right"></div>
+    </div>
+  </div>
+  <div style="margin-top: 60px;"></div>
+  <div class="zone-typ" style="display: none;">
+    <div class="content">
+      <h2>Payment method for your transfers</h2>
+      <p>
+        We currently offer a transfer method.
+      </p>
+      <div class="slick-slider">
+        <div class="controls">
+          <button class="btn btn-link">
+            <img src="assets/images/svg/arrow-left-short.svg" alt="" />
+          </button>
+          <button class="btn btn-link">
+            <img src="assets/images/svg/arrow-right-short.svg" alt="" />
+          </button>
+        </div>
+        <div class="s-slides">
+          <div class="content">
+            <div class="card">
+              <p class="c-title">Virement bancaire</p>
+              <p class="c-content">
+                Transférez de l'argent depuis votre compte bancaire vers un
+                compte Wa-llet.
+              </p>
+              <button class="btn btn-primary">En savoir plus</button>
+            </div>
+            <div class="card" style="display: none;">
+              <p class="c-title">Carte de débit</p>
+              <p class="c-content">
+                Le paiement par carte de débit est simple et rapide. Il est
+                également moins coûteux qu'une carte de crédit.
+              </p>
+              <button class="btn btn-primary">En savoir plus</button>
+            </div>
+            <div class="card"  style="display: none;">
+              <p class="c-title">Carte de crédit</p>
+              <p class="c-content">
+                Les émetteurs de cartes de crédit peuvent appliquer des frais en
+                amont.
+              </p>
+              <button class="btn btn-primary">En savoir plus</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="reviews"  style="display: none;">
+    <div class="content">
+      <img class="img-gift" src="assets/images/svg/trustpilot.svg" alt="" />
+      <div class="rated">
+        <span>78 150 avis · Bien</span>
+        <hr class="vertical" />
+        <div class="stars-rated">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <img
+                class="img-gift"
+                src="assets/images/svg/star-fill.svg"
+                alt=""
+              />
+            </li>
+            <li class="list-inline-item">
+              <img
+                class="img-gift"
+                src="assets/images/svg/star-fill.svg"
+                alt=""
+              />
+            </li>
+            <li class="list-inline-item">
+              <img
+                class="img-gift"
+                src="assets/images/svg/star-fill.svg"
+                alt=""
+              />
+            </li>
+            <li class="list-inline-item">
+              <img
+                class="img-gift"
+                src="assets/images/svg/star-fill.svg"
+                alt=""
+              />
+            </li>
+            <li class="list-inline-item">
+              <img class="img-gift" src="assets/images/svg/star.svg" alt="" />
+            </li>
+            <li class="list-inline-item"><span>4.6</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="slick-slider">
+        <div class="controls">
+          <button class="btn btn-link">
+            <img src="assets/images/svg/arrow-left-short.svg" alt="" />
+          </button>
+          <button class="btn btn-link">
+            <img src="assets/images/svg/arrow-right-short.svg" alt="" />
+          </button>
+        </div>
+        <div class="s-slides">
+          <div class="content">
+            <div class="card">
+              <p class="r-title">Arielle Carelle TOUKAM NGUEBMEG</p>
+              <p class="r-content">1 avis</p>
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star-fill.svg"
+                    alt=""
+                  />
+                </li>
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star-fill.svg"
+                    alt=""
+                  />
+                </li>
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star-fill.svg"
+                    alt=""
+                  />
+                </li>
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star-fill.svg"
+                    alt=""
+                  />
+                </li>
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star.svg"
+                    alt=""
+                  />
+                </li>
+              </ul>
+              <p class="r-lib">"Service rapide et éfficace"</p>
+              <p class="r-date">
+                <img src="assets/images/png/canada.png" alt="" /> il y a 6 mois
+              </p>
+            </div>
+            <div class="card">
+              <p class="r-title">Franck PONDJA DJIENCHEU</p>
+              <p class="r-content">1 avis</p>
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star-fill.svg"
+                    alt=""
+                  />
+                </li>
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star-fill.svg"
+                    alt=""
+                  />
+                </li>
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star-fill.svg"
+                    alt=""
+                  />
+                </li>
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star-fill.svg"
+                    alt=""
+                  />
+                </li>
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star.svg"
+                    alt=""
+                  />
+                </li>
+              </ul>
+              <p class="r-lib">"Transfert d'argent rapide"</p>
+              <p class="r-date">
+                <img src="assets/images/png/canada.png" alt="" /> il y a 6 mois
+              </p>
+            </div>
+            <div class="card">
+              <p class="r-title">Patricia NGUETSOP WOUTIO</p>
+              <p class="r-content">1 avis</p>
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star-fill.svg"
+                    alt=""
+                  />
+                </li>
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star-fill.svg"
+                    alt=""
+                  />
+                </li>
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star-fill.svg"
+                    alt=""
+                  />
+                </li>
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star-fill.svg"
+                    alt=""
+                  />
+                </li>
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star.svg"
+                    alt=""
+                  />
+                </li>
+              </ul>
+              <p class="r-lib">
+                "Plateforme sécurisé, transfert rapide et application très
+                fluide et bien structurée."
+              </p>
+              <p class="r-date">
+                <img src="assets/images/png/canada.png" alt="" /> il y a 6 mois
+              </p>
+            </div>
+            <div class="card">
+              <p class="r-title">Daniel Arango Moreno</p>
+              <p class="r-content">1 avis</p>
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star-fill.svg"
+                    alt=""
+                  />
+                </li>
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star-fill.svg"
+                    alt=""
+                  />
+                </li>
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star-fill.svg"
+                    alt=""
+                  />
+                </li>
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star-fill.svg"
+                    alt=""
+                  />
+                </li>
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star.svg"
+                    alt=""
+                  />
+                </li>
+              </ul>
+              <p class="r-lib">
+                "C’est mieux merci beaucoup pour aide à les personnes étrangèrs"
+              </p>
+              <p class="r-date">
+                <img src="assets/images/png/canada.png" alt="" /> il y a 6 mois
+              </p>
+            </div>
+            <div class="card">
+              <p class="r-title">Majid Chaadi</p>
+              <p class="r-content">2 avis</p>
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star-fill.svg"
+                    alt=""
+                  />
+                </li>
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star-fill.svg"
+                    alt=""
+                  />
+                </li>
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star-fill.svg"
+                    alt=""
+                  />
+                </li>
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star-fill.svg"
+                    alt=""
+                  />
+                </li>
+                <li class="list-inline-item">
+                  <img
+                    class="img-gift"
+                    src="assets/images/svg/star.svg"
+                    alt=""
+                  />
+                </li>
+              </ul>
+              <p class="r-lib">
+                "Très bien. Très peu de frais et un bon taux de change."
+              </p>
+              <p class="r-date">
+                <img src="assets/images/png/france.png" alt="" /> il y a 6 mois
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="how-to-two">
+    <div class="content">
+      <div class="right"></div>
+      <div class="left">
+        <h3>What is the cost for a money transfer abroad?</h3>
+        <p>
+          Our commitment to permanently reducing the costs of our transfers aims
+          to allow you to maximize your shipments without seeing your earnings reduced by
+          transfer fees.
+          
+        </p>
+        <ul>
+          <li>
+            All our fees are clearly stated up front,
+            without any hidden costs.
+          </li>
+          <li>
+            You are informed about exchange rates through our currency converter.
+          </li>
+          <li>
+            Once you have selected the receive mode and transfer partner,
+            you have a complete view of the total amount received by your beneficiary
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="regulated-section" style="display: none;">
+    <div class="content">
+      <div class="right">
+        <h2>Votre argent est en sécurité avec nous</h2>
+        <p>
+          Nous sommes accrédités par les organismes de régulation gouvernementaux à travers le monde.
+          Vous pouvez donc avoir confiance en notre respect des normes de sécurité et de conformité les plus rigoureuses.
+
+        </p>
+        <select class="form-select" style="display: none;">
+          <option selected>International</option>
+          <option>Allemagne</option>
+          <option>Australie</option>
+          <option>Canada</option>
+          <option>Français</option>
+        </select>
+      </div>
+      <div class="left">
+        <div class="about-small">
+          Wa-llet Central Inc (Ontario) est enregistrée conformément à la réglementation du Centre d'analyse 
+          des opérations et déclarations financières du Canada sous le numéro M19255682. 
+          De même, Wa-llet West Inc. (Provinces de l'Ouest) est enregistrée sous le numéro M19043501,
+          et Wa-llet Inc. (Québec) sous le numéro M11556765. Ces entités sont également réglementées
+          par l'Autorité des marchés financiers, affiliée sous le numéro 900044.
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="app-section">
+    <div class="content">
+      <div class="left">
+        <img src="assets/images/png/home-6.png" alt="" />
+      </div>
+      <div class="right">
+        <h2>
+          A fast and efficient way to send money from the United States to Cameroon.
+        </h2> 
+        <p>
+          Download our free app to send money online
+          to Cameroon in just a few minutes. Check your history from wherever you are
+        </p>
+        <div class="download_app"> 
+          <button class="btn btn-link">
+            <img src="assets/images/png/download_AppStore.png" alt="" />
+          </button>
+          <button class="btn btn-link">
+            <img src="assets/images/png/download_PlayStore.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="list-country-section" style="display: none;">
+    <div class="content">
+      <h2>Dans quels pays pouvez-vous envoyer de l'argent avec Wa-llet ?</h2>
+      <p>Choix les plus répandus</p>
+      <div class="country">
+        <button class="btn btn-link">
+          <span>
+            <img src="assets/images/png/cameroon.png" alt="" />
+            Cameroun
+          </span>
+          <img
+            class="img-chv"
+            src="assets/images/svg/chevron-right.svg"
+            alt=""
+          />
+        </button>
+        <button class="btn btn-link">
+          <span>
+            <img src="assets/images/png/ghana.png" alt="" />
+            Ghana
+          </span>
+          <img
+            class="img-chv"
+            src="assets/images/svg/chevron-right.svg"
+            alt=""
+          />
+        </button>
+        <button class="btn btn-link">
+          <span>
+            <img src="assets/images/png/kenya.png" alt="" />
+            Kenya
+          </span>
+          <img
+            class="img-chv"
+            src="assets/images/svg/chevron-right.svg"
+            alt=""
+          />
+        </button>
+        <button class="btn btn-link">
+          <span>
+            <img src="assets/images/png/nigeria.png" alt="" />
+            Nigéria
+          </span>
+          <img
+            class="img-chv"
+            src="assets/images/svg/chevron-right.svg"
+            alt=""
+          />
+        </button>
+        <button class="btn btn-link">
+          <span>
+            <img src="assets/images/png/philippines.png" alt="" />
+            Philippines
+          </span>
+          <img
+            class="img-chv"
+            src="assets/images/svg/chevron-right.svg"
+            alt=""
+          />
+        </button>
+        <button class="btn btn-link">
+          <span>
+            <img src="assets/images/png/zimbabwe.png" alt="" />
+            Zimbabwe
+          </span>
+          <img
+            class="img-chv"
+            src="assets/images/svg/chevron-right.svg"
+            alt=""
+          />
+        </button>
+      </div>
+      <button class="btn btn-outline-light">Voir tous les pays</button>
+    </div>
+  </div>
+  <div class="faq">
+    <div class="content">
+      <h2>At your side, every step of the way, 24 hours a day, 7 days a week</h2>
+      <p>
+        Our customer support team is available
+        24 hours a day, 7 days a week to give you the help you need.
+        you need.
+      </p>
+      <div class="img-faq"></div>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne">
+              What information do I need to send money to Cameroon?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              To send money abroad, you will need to register with Wa-llet
+              in order to make an international money transfer. This registration can be done
+              via the Wa-llet application, available on Android or iOS.
+              The following information will be required:
+              <br />
+              <br />
+              <b>Personal information.</b> Register by providing your full name,
+              your email address, mobile phone number, gender, date of birth and address.
+              <br />
+              <br />
+              <b>Transfer information.</b>Choose the amount you want to send,
+               select the method of receipt desired by the beneficiary, as well as the method of payment.
+               We will always tell you the exact amount the beneficiary will receive.
+              <br />
+              <br />
+              <b>Recipient information.</b> We will need specific contact details
+               relating to the beneficiary abroad. The beneficiary's full name, mobile phone number
+               are still required for sending money.
+               Please note that the beneficiary is not required to have a Wa-llet account.
+              <br />
+              <br />
+              <b>Payment information.</b> You will need to top up your Wa-llet account using Zelle
+               so you can send money abroad
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo">
+              What are the advantages of sending money with
+              Wa-llet?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Wa-llet is used by thousands of people to send money to Cameroon from the USA.
+              We offer better exchange rates and proximity to our customers.
+              Every transaction made through our services is subject to rigorous security checks.              
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree">
+              What verification steps are required for a USA-Cameroon transfer?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              We will verify your mobile phone number using a one-time code.
+              You may be asked to provide identification and take a selfie to validate your identity
+              and send them to us via our communication channel.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour" >
+              What is the maximum limit for transferring money abroad?
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              For security and vigilance reasons, we set the maximum amount for a transfer to Cameroon
+              the sum of 500,000 FCFA. Please note that this sum will be possible on the sole condition that our team has verified
+              your informations.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive">
+              How long does a money transfer with Wa-llet take?
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Generally speaking, money transfers made via Wa-llet arrive instantly.
+              We strive to provide the best possible service.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix" >
+              How do I know if my Wa-llet transfer has reached the beneficiary?
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Once we have processed your transfer and your beneficiary has received
+              has received the amount of your transfer, we will send you a confirmation text message 
+              text message (Sms) to your number with the details of the operation.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--button class="btn btn-light">Consultez notre FAQ</button-->
+    </div>
+  </div>
+</div>

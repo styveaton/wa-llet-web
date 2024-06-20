@@ -1,0 +1,56 @@
+.my-info {
+  width: 100%;
+  .content {
+    padding: 40px 120px 80px;
+    width: 50%;
+    max-width: 1600px;
+    margin: auto;
+    h3 {
+      font-size: 36px;
+      font-family: f-bold;
+      margin: 0 0 16px;
+      color: #000000;
+    }
+    p {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0 0 32px;
+      color: #000000;
+    }
+    .data {
+      padding: 16px 0;
+      border-bottom: solid 1px #f4f4f4;
+      &:last-child {
+        border: none;
+      }
+      p {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      span {
+        font-family: f-bold;
+        font-size: 16px;
+        margin: 0 0 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .my-info .content {
+    padding: 40px 20px 80px;
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .my-info .content {
+    padding: 40px 20px 80px;
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+  }
+}

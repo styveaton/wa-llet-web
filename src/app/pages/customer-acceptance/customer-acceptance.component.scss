@@ -1,0 +1,192 @@
+.customer_acceptance {
+  .hero {
+    background-color: #3e7ccc;
+    text-align: center;
+    padding: 64px 0;
+    h1 {
+      color: #ffffff;
+      font-size: 56px;
+      font-family: f-bold;
+      margin: 40px 0 0;
+    }
+    p {
+        font-style: italic;
+        font-size: 20px;
+        font-family: f-bold;
+        color: #ffffff;
+    }
+  }
+  .section_content {
+    width: 100%;
+    padding: 64px 0;
+    background-color: #ffffff;
+    .content {
+      max-width: 1600px;
+      margin: auto;
+      width: 100%;
+      padding: 0 120px;
+      font-size: 20px;
+      text-align: justify;
+      font-weight: bold;
+      h3 {
+        font-family: f-bold;
+        font-size: 24px;
+        margin: 16px 0;
+      }
+      h2 {
+        font-family: f-bold;
+        font-size: 32px;
+        margin: 16px 0;
+      }
+      strong {
+        font-family: f-bold;
+        font-size: 20px;
+        font-weight: normal;
+        margin: 0 0 16px;
+      }
+    }
+  }
+  .app-section {
+    padding: 104px 0px;
+    width: 100%;
+    background-color: #f4f9ff;
+    .content {
+      padding: 0px 120px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 40px;
+      max-width: 1600px;
+      margin: auto;
+      .left {
+        display: flex;
+        justify-content: center;
+      }
+      .right {
+        h2 {
+          font-size: 32px;
+          font-family: f-bold;
+          margin: 0 0 8px;
+          line-height: 1.25;
+        }
+        p {
+          font-size: 20px;
+          font-weight: bold;
+          margin: 0 0 32px;
+          line-height: 1.25;
+        }
+        .download_app {
+          display: flex;
+          gap: 20px;
+          .btn-link {
+            text-decoration: none;
+            padding: 0 !important;
+            img {
+              width: 135px !important;
+              height: 40px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .customer_acceptance .hero h1 {
+    font-size: 24px;
+  }
+  .customer_acceptance .section_content .content {
+    max-width: 1600px;
+    margin: auto;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+  }
+  .customer_acceptance .section_content {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #ffffff;
+  }
+  .customer_acceptance .app-section {
+    padding: 24px 0px 60px;
+  }
+  .customer_acceptance .app-section .content {
+    padding: 0px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column-reverse;
+    .left {
+      margin: auto;
+      img {
+        width: 100%;
+        height: 460px;
+      }
+    }
+  }
+  .customer_acceptance .app-section .content .right .download_app {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .customer_acceptance .app-section .content .right h2 {
+    text-align: center;
+  }
+  .customer_acceptance .app-section .content .right p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .customer_acceptance .hero h1 {
+    font-size: 24px;
+  }
+  .customer_acceptance .section_content .content {
+    max-width: 1600px;
+    margin: auto;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+  }
+  .customer_acceptance .section_content {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #ffffff;
+  }
+  .customer_acceptance .app-section {
+    padding: 24px 0px 60px;
+  }
+  .customer_acceptance .app-section .content {
+    padding: 0px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column-reverse;
+    .left {
+      margin: auto;
+      img {
+        width: 100%;
+        height: 460px;
+      }
+    }
+  }
+  .customer_acceptance .app-section .content .right .download_app {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .customer_acceptance .app-section .content .right h2 {
+    text-align: center;
+  }
+  .customer_acceptance .app-section .content .right p {
+    text-align: center;
+  }
+}

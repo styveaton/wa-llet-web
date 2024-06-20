@@ -1,0 +1,365 @@
+.faq {
+  width: 100%;
+  .hero-section-faq {
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    background: linear-gradient(90deg, #3b5999, #1d6147);
+    .content {
+      width: 100%;
+      padding: 0 120px;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      justify-items: center;
+      max-width: 1600px;
+      margin: auto;
+      img {
+        width: 240px;
+        height: 240px;
+        position: relative;
+        top: 25%;
+      }
+      p {
+        font-size: 80px;
+        margin: 0;
+        font-family: f-bold;
+        line-height: 1.25;
+        color: #ffffff;
+      }
+      .form-control {
+        height: 52px;
+        border-radius: 0;
+        font-family: f-bold;
+        font-size: 20px;
+      }
+    }
+  }
+  .faq-topic {
+    width: 100%;
+    height: auto;
+    padding: 64px 0;
+    .content {
+      width: 100%;
+      padding: 0 120px;
+      gap: 30px;
+      max-width: 1600px;
+      margin: auto;
+      display: grid;
+      grid-template-rows: repeat(2, auto);
+      grid-template-columns: 1fr auto;
+      .widget-faq {
+        grid-row: 2;
+        grid-column: 2;
+        h3 {
+          font-size: 28px;
+          margin: 0 0 30px;
+          font-family: f-bold;
+        }
+        .list-unstyled {
+          padding: 0;
+          margin: 0;
+          li {
+            margin: 0 0 16px;
+            a {
+              font-size: 16px;
+              text-decoration: none;
+              color: #3b5999;
+              font-weight: bold;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      h2 {
+        font-size: 32px;
+        font-family: f-bold;
+        grid-column: 1/-1;
+      }
+      .explore-block {
+        display: grid;
+        gap: 24px;
+        .rub {
+          display: grid;
+          grid-template-columns: 50px 1fr 20px;
+          align-items: center;
+          gap: 16px;
+          height: 148px;
+          padding: 32px 24px;
+          box-shadow: none;
+          border-radius: 16px;
+          background-color: #f8f8f8;
+          .img-sec {
+            width: 40px;
+            height: 40px;
+          }
+          div {
+            display: grid;
+            gap: 10px;
+            h3 {
+              font-size: 28px;
+              font-family: f-bold;
+              margin: 0;
+            }
+            p {
+              font-size: 16px;
+              font-weight: bold;
+              margin: 0;
+            }
+          }
+          .icon-sec {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+  .app-section {
+    padding: 104px 0px;
+    width: 100%;
+    background-color: #e9fde9;
+    .content {
+      padding: 0px 120px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      max-width: 1600px;
+      margin: auto;
+      .left {
+        display: flex;
+        justify-content: center;
+      }
+      .right {
+        h2 {
+          font-size: 32px;
+          font-family: f-bold;
+          margin: 0 0 8px;
+          line-height: 1.25;
+        }
+        p {
+          font-size: 20px;
+          font-weight: bold;
+          margin: 0 0 32px;
+          line-height: 1.25;
+        }
+        .download_app {
+          display: flex;
+          gap: 20px;
+          .btn-link {
+            text-decoration: none;
+            padding: 0 !important;
+            img {
+              width: 135px !important;
+              height: 40px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .pub {
+    padding: 100px 0px;
+    width: 100%;
+    background-color: #0c1023;
+    background-image: url(/assets/images/jpg/how-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .content {
+      padding: 0 120px;
+      width: 100%;
+      text-align: center;
+      max-width: 1600px;
+      margin: auto;
+      h1 {
+        font-size: 56px;
+        color: #ffffff;
+        font-family: f-bold;
+        line-height: 1.25;
+        margin: 0 0 32px;
+      }
+      .btn-primary {
+        height: 56px;
+        font-size: 20px !important;
+        font-family: f-bold;
+        background-color: #3b5999;
+        border: none;
+      }
+    }
+  }
+  h2.web {
+    display: block;
+  }
+  h2.mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq .hero-section-faq .content {
+    padding: 0 20px;
+    gap: 30px;
+  }
+  .faq .hero-section-faq .content p {
+    font-size: 36px;
+  }
+  .faq .hero-section-faq .content img {
+    width: 100px;
+    height: 100px;
+  }
+  .faq .hero-section-faq .content .form-control {
+    grid-row: 2;
+    grid-column: 1/-1;
+  }
+  .faq .hero-section-faq {
+    padding: 50px 0;
+  }
+  .faq .app-section {
+    padding: 24px 0px 60px;
+  }
+  .faq .app-section .content {
+    padding: 0px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column-reverse;
+    .left {
+      margin: auto;
+      img {
+        width: 100%;
+        height: 460px;
+      }
+    }
+  }
+  .faq .app-section .content .right .download_app {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .faq .app-section .content .right h2 {
+    text-align: center;
+  }
+  .faq .app-section .content .right p {
+    text-align: center;
+  }
+  .faq .pub {
+    padding: 80px 0px;
+  }
+  .faq .pub .content {
+    padding: 0 50px;
+  }
+  .faq .pub .content h1 {
+    font-size: 28px;
+  }
+  .faq .faq-topic .content {
+    padding: 0 20px;
+    margin: auto;
+    display: block;
+  }
+  .faq .faq-topic .content .explore-block .rub {
+    height: auto;
+  }
+  .faq .content h2.web {
+    display: none;
+  }
+  .faq .content h2.mobile {
+    display: block;
+    margin: 0 0 30px;
+  }
+  .faq .faq-topic {
+    padding: 30px 0;
+  }
+  .faq .faq-topic .content .widget-faq h3 {
+    font-size: 24px;
+    margin: 0 0 16px;
+  }
+  .faq .faq-topic .content .widget-faq .list-unstyled {
+    margin: 0 0 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .faq .hero-section-faq .content {
+    padding: 0 20px;
+    gap: 30px;
+  }
+  .faq .hero-section-faq .content p {
+    font-size: 36px;
+  }
+  .faq .hero-section-faq .content img {
+    width: 100px;
+    height: 100px;
+  }
+  .faq .hero-section-faq .content .form-control {
+    grid-row: 2;
+    grid-column: 1/-1;
+  }
+  .faq .hero-section-faq {
+    padding: 50px 0;
+  }
+  .faq .app-section {
+    padding: 24px 0px 60px;
+  }
+  .faq .app-section .content {
+    padding: 0px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column-reverse;
+    .left {
+      margin: auto;
+      img {
+        width: 100%;
+        height: 460px;
+      }
+    }
+  }
+  .faq .app-section .content .right .download_app {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .faq .app-section .content .right h2 {
+    text-align: center;
+  }
+  .faq .app-section .content .right p {
+    text-align: center;
+  }
+  .faq .pub {
+    padding: 80px 0px;
+  }
+  .faq .pub .content {
+    padding: 0 50px;
+  }
+  .faq .pub .content h1 {
+    font-size: 28px;
+  }
+  .faq .faq-topic .content {
+    padding: 0 20px;
+    margin: auto;
+    display: block;
+  }
+  .faq .faq-topic .content .explore-block .rub {
+    height: auto;
+  }
+  .faq .content h2.web {
+    display: none;
+  }
+  .faq .content h2.mobile {
+    display: block;
+    margin: 0 0 30px;
+  }
+  .faq .faq-topic {
+    padding: 30px 0;
+  }
+  .faq .faq-topic .content .widget-faq h3 {
+    font-size: 24px;
+    margin: 0 0 16px;
+  }
+  .faq .faq-topic .content .widget-faq .list-unstyled {
+    margin: 0 0 30px;
+  }
+}

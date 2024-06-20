@@ -1,0 +1,648 @@
+.mobile-app {
+  width: 100%;
+  .mobile-app-hero {
+    background-color: #3b5999;
+    margin: auto;
+    width: 100%;
+    padding: 64px 0px;
+
+    .content {
+      max-width: 1600px;
+      margin: auto;
+      width: 100%;
+      padding: 0 120px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10%;
+      justify-items: center;
+      .left {
+        h2 {
+          font-size: 40px;
+          font-family: f-bold;
+          color: #ffffff;
+          margin: 0 0 16px;
+        }
+        p {
+          font-size: 20px;
+          font-weight: bold;
+          color: #ffffff;
+          margin: 0 0 24px;
+        }
+        .panel {
+          padding: 32px;
+          border-radius: 8px;
+          background-color: #f8f7f2;
+          p {
+            margin: 0 0 16px;
+            color: #000000;
+            font-size: 16px;
+          }
+          img {
+            width: 128px;
+            height: 128px;
+          }
+        }
+      }
+      .right {
+        .d-mobile {
+          display: none;
+        }
+        img {
+          height: 650px;
+          width: auto;
+          &.d-web {
+            display: block;
+          }
+          &.d-mobile {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .section-pub {
+    width: 100%;
+    //background: linear-gradient(90deg, #3b5999, #000000);
+    padding: 64px 0;
+    background-image: url(/assets/images/jpg/app-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .content {
+      max-width: 1600px;
+      margin: auto;
+      width: 100%;
+      padding: 0 120px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10%;
+      justify-items: center;
+      .left {
+        font-size: 62px;
+        font-family: f-bold;
+        line-height: 1.15;
+        color: #ffffff;
+      }
+    }
+  }
+  .vid-section {
+    height: auto;
+    width: 100%;
+    background-color: #555555;
+    padding: 100px 0;
+    background-image: url(/assets/images/jpg/app-3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    .content {
+      display: grid;
+      gap: 16px;
+      padding: 0 120px;
+      text-align: center;
+      width: 60%;
+      max-width: 1600px;
+      margin: auto;
+      .btn-play {
+        width: 130px;
+        height: 130px;
+        border-radius: 100px !important;
+        background-color: #ffffff62;
+        margin: auto;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        img {
+          width: 96px !important;
+          height: 96px !important;
+        }
+        .animated {
+          width: 7.5rem;
+          height: 7.5rem;
+          opacity: 0;
+          position: absolute;
+          animation: animation 5s infinite ease-out;
+          transform: scaleX(0.8) scaleY(0.8);
+          border-radius: 50%;
+          background-color: #ffffff;
+        }
+        @keyframes animation {
+          0%,
+          100%,
+          30% {
+            opacity: 0;
+            transform: scaleX(0.8) scaleY(0.8);
+          }
+        }
+      }
+      h3 {
+        font-size: 32px;
+        margin: 0;
+        color: #ffffff;
+        font-family: f-bold;
+      }
+      p {
+        font-size: 20px;
+        margin: 0;
+        line-height: 1.25;
+        color: #ffffff;
+      }
+    }
+  }
+  .why-us {
+    padding: 50px 0px;
+    width: 100%;
+    background: linear-gradient(90deg, #3b5999, #0f285f);
+    .content {
+      padding: 0 120px;
+      width: 100%;
+      max-width: 1600px;
+      margin: auto;
+      h2 {
+        font-size: 40px;
+        margin: 0 0 32px;
+        font-family: f-bold;
+        text-align: center;
+        color: #ffffff;
+      }
+      .line-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 80px;
+        .block {
+          text-align: center;
+          img {
+            width: 64px;
+            height: 64px;
+            margin: 0 0 16px;
+          }
+          h2 {
+            font-size: 32px;
+            font-family: f-bold;
+            color: #ffffff;
+            margin: 0 0 8px;
+          }
+          p {
+            font-size: 16px;
+            color: #ffffff;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .how-to-send-money {
+    padding: 50px 0;
+    max-width: 1600px;
+    margin: auto;
+    .content {
+      padding: 0 120px;
+      h2 {
+        font-size: 32px;
+        font-family: f-bold;
+        color: #000000;
+        margin: 0 0 16px;
+        text-align: center;
+      }
+      .block {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        .card {
+          width: 100%;
+          height: fit-content;
+          background-color: #f3f5ff;
+          padding: 24px;
+          border-radius: 8px;
+          display: grid;
+          border: none;
+          justify-items: center;
+          text-align: center;
+          img {
+            width: 100%;
+            height: auto;
+            margin: 0 0 16px;
+          }
+          h3 {
+            font-size: 20px;
+            color: #3b5999;
+            font-family: f-bold;
+          }
+          p {
+            font-size: 16px;
+            margin: 0;
+            font-weight: bold;
+            line-height: 1.25;
+            a {
+              color: #3b5999;
+              font-family: f-bold;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+  .app-section {
+    padding: 104px 0px;
+    width: 100%;
+    background-color: #e9fde9;
+    .content {
+      padding: 0px 120px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      max-width: 1600px;
+      margin: auto;
+      .left {
+        display: flex;
+        justify-content: center;
+      }
+      .right {
+        h2 {
+          font-size: 32px;
+          font-family: f-bold;
+          margin: 0 0 8px;
+          line-height: 1.25;
+        }
+        p {
+          font-size: 20px;
+          font-weight: bold;
+          margin: 0 0 32px;
+          line-height: 1.25;
+        }
+        .download_app {
+          display: flex;
+          gap: 20px;
+          .btn-link {
+            text-decoration: none;
+            padding: 0 !important;
+            img {
+              width: 135px !important;
+              height: 40px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .zone-typ {
+    padding: 104px 0px;
+    width: 100%;
+    .content {
+      padding: 0 120px;
+      width: 100%;
+      max-width: 1600px;
+      margin: auto;
+      h2 {
+        font-family: f-bold;
+        font-size: 32px;
+        margin: 0 0 8px;
+      }
+      p {
+        font-size: 24px;
+        margin: 0 0 32px;
+        line-height: 1.25;
+        font-weight: bold;
+      }
+      .slick-slider {
+        display: grid;
+        gap: 24px;
+        justify-content: start;
+        .controls {
+          display: flex;
+          gap: 5px;
+          .btn-link {
+            text-decoration: none;
+            font-family: f-bold;
+            font-size: 24px !important;
+            color: #3b5999;
+            height: 40px;
+            width: 40px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              width: 40px !important;
+              height: 40px !important;
+            }
+          }
+        }
+        .s-slides {
+          width: 100%;
+          overflow: hidden;
+          overflow-x: scroll;
+          padding: 0 0 10px;
+          &::-webkit-scrollbar {
+            height: 10px;
+            border-radius: 0;
+            background-color: #ffffff;
+            padding: 2px;
+            position: relative;
+            top: 5px;
+          }
+          &::-webkit-scrollbar-thumb {
+            height: 100%;
+            border-radius: 10px;
+            background-color: #3b5999;
+          }
+
+          .content {
+            gap: 24px;
+            display: flex;
+            padding: 0;
+            width: fit-content;
+          }
+          .card {
+            padding: 16px;
+            width: 270px;
+            height: 270px;
+            background-color: #3b5999;
+            display: grid;
+            grid-template-rows: 1fr 5fr auto;
+            .c-title {
+              font-family: f-bold;
+              font-size: 20px;
+              color: #ffffff;
+              margin: 0;
+            }
+            .c-content {
+              font-size: 16px;
+              color: #ffffff;
+            }
+            .btn-primary {
+              border: solid 2px #ffffff;
+              background-color: transparent;
+              font-family: f-bold;
+              font-size: 16px !important;
+              width: 55%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-app .mobile-app-hero {
+    padding: 64px 20px;
+  }
+  .mobile-app .mobile-app-hero .content {
+    grid-template-columns: 1fr;
+    gap: 5%;
+  }
+  .mobile-app .mobile-app-hero .content .left .panel {
+    display: none;
+  }
+  .mobile-app .mobile-app-hero .content .right {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+  }
+  .mobile-app .mobile-app-hero .content .right img {
+    height: auto;
+    width: 320px;
+  }
+  .mobile-app .mobile-app-hero .content .right img.d-web {
+    display: none;
+  }
+  .mobile-app .mobile-app-hero .content .right p.d-mobile {
+    color: #ffffff;
+    font-weight: bold;
+    a {
+      color: #5b88eb;
+    }
+  }
+  .mobile-app .mobile-app-hero .content .right .btn-light {
+    background-color: #ffffff;
+    font-size: 20px !important;
+    font-family: f-bold;
+    height: 56px;
+    color: #3b5999;
+    width: 100%;
+  }
+  .mobile-app .section-pub .content {
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10%;
+    justify-items: center;
+  }
+  .mobile-app .section-pub .content .left {
+    font-size: 28px;
+    font-family: f-bold;
+    line-height: 1.15;
+    color: #ffffff;
+  }
+  .mobile-app .app-section {
+    padding: 24px 0px 60px;
+  }
+  .mobile-app .app-section .content {
+    padding: 0px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column-reverse;
+    .left {
+      margin: auto;
+      img {
+        width: 100%;
+        height: 460px;
+      }
+    }
+  }
+  .mobile-app .app-section .content .right .download_app {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .mobile-app .app-section .content .right h2 {
+    text-align: center;
+  }
+  .mobile-app .app-section .content .right p {
+    text-align: center;
+  }
+  .mobile-app .zone-typ .content {
+    padding: 0 20px;
+  }
+  .mobile-app .zone-typ .content .slick-slider .s-slides .content {
+    gap: 24px;
+    display: flex;
+    width: fit-content;
+    padding: 0;
+  }
+  .mobile-app .zone-typ {
+    padding: 56px 0px;
+  }
+  .mobile-app .vid-section .content {
+    padding: 0 16px;
+    width: 100%;
+    margin: auto;
+  }
+  .mobile-app .vid-section {
+    height: auto;
+    padding: 60px 0;
+  }
+  .mobile-app .why-us .content {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .mobile-app .why-us .content h2 {
+    font-size: 32px;
+  }
+  .mobile-app .why-us .content .line-block {
+    grid-template-columns: 1fr;
+  }
+  .mobile-app .how-to-send-money .content {
+    padding: 0 20px;
+  }
+  .mobile-app .how-to-send-money .content .block {
+    grid-template-columns: 1fr;
+  }
+  .mobile-app .how-to-send-money .content .block .card {
+    justify-items: start;
+    text-align: left;
+  }
+  .mobile-app .how-to-send-money .content .block .card img {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .mobile-app .mobile-app-hero {
+    padding: 64px 20px;
+  }
+  .mobile-app .mobile-app-hero .content {
+    grid-template-columns: 1fr;
+    gap: 5%;
+    padding: 0;
+  }
+  .mobile-app .mobile-app-hero .content .left .panel {
+    display: none;
+  }
+  .mobile-app .mobile-app-hero .content .right {
+    text-align: center;
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+  }
+  .mobile-app .mobile-app-hero .content .right img {
+    height: auto;
+    width: 320px;
+  }
+  .mobile-app .mobile-app-hero .content .right img.d-web {
+    display: none;
+  }
+  .mobile-app .mobile-app-hero .content .right .btn-light {
+    background-color: #ffffff;
+    font-size: 20px !important;
+    font-family: f-bold;
+    height: 56px;
+    color: #3b5999;
+    width: 100%;
+  }
+  .mobile-app .mobile-app-hero .content .right .btn-light,
+  .mobile-app .mobile-app-hero .content .right p.d-mobile,
+  .mobile-app .mobile-app-hero .content .right img.d-mobile {
+    display: block;
+  }
+  .mobile-app .mobile-app-hero .content .right p.d-mobile {
+    color: #ffffff;
+    font-weight: bold;
+    a {
+      color: #5b88eb;
+    }
+  }
+  .mobile-app .section-pub .content {
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10%;
+    justify-items: center;
+  }
+  .mobile-app .section-pub .content .left {
+    font-size: 28px;
+    font-family: f-bold;
+    line-height: 1.15;
+    color: #ffffff;
+  }
+  .mobile-app .app-section {
+    padding: 24px 0px 60px;
+  }
+  .mobile-app .app-section .content {
+    padding: 0px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column-reverse;
+    .left {
+      margin: auto;
+      img {
+        width: 100%;
+        height: 460px;
+      }
+    }
+  }
+  .mobile-app .app-section .content .right .download_app {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .mobile-app .app-section .content .right h2 {
+    text-align: center;
+  }
+  .mobile-app .app-section .content .right p {
+    text-align: center;
+  }
+  .mobile-app .zone-typ .content {
+    padding: 0 20px;
+  }
+  .mobile-app .zone-typ .content .slick-slider .s-slides .content {
+    gap: 24px;
+    display: flex;
+    width: fit-content;
+    padding: 0;
+  }
+  .mobile-app .zone-typ {
+    padding: 56px 0px;
+  }
+  .mobile-app .vid-section .content {
+    padding: 0 16px;
+    width: 100%;
+    margin: auto;
+  }
+  .mobile-app .vid-section {
+    height: auto;
+    padding: 60px 0;
+  }
+  .mobile-app .why-us .content {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .mobile-app .why-us .content h2 {
+    font-size: 32px;
+  }
+  .mobile-app .why-us .content .line-block {
+    grid-template-columns: 1fr;
+  }
+  .mobile-app .how-to-send-money .content {
+    padding: 0 20px;
+  }
+  .mobile-app .how-to-send-money .content .block {
+    grid-template-columns: 1fr;
+  }
+  .mobile-app .how-to-send-money .content .block .card {
+    justify-items: start;
+    text-align: left;
+  }
+  .mobile-app .how-to-send-money .content .block .card img {
+    display: none;
+  }
+}

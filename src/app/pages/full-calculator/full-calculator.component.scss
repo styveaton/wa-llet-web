@@ -1,0 +1,242 @@
+.full-calculator {
+  width: 100%;
+  .hero-section {
+    height: auto;
+    width: 100%;
+    .content-hero {
+      padding: 40px 120px 80px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 80px;
+      background-color: #5374b9;
+    }
+    .left {
+      display: grid;
+      gap: 20px;
+      h1 {
+        font-size: 56px;
+        font-family: f-bold;
+        color: #ffffff;
+        margin: 0;
+      }
+      b {
+        font-size: 28px;
+        color: #ffffff;
+        margin: 0;
+        line-height: 1.25;
+        font-family: f-bold;
+      }
+      .btn-primary {
+        height: 56px;
+        width: 209px;
+        background-color: #3b5999;
+        border: none;
+        font-size: 20px !important;
+        font-family: f-bold;
+      }
+      .licence {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .lib-licence {
+          border-left: solid 1px #ffffff;
+          .separator {
+            display: grid;
+            margin: 0 0 0 20px;
+            span {
+              font-family: f-bold;
+              color: #ffffff;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .right {
+        .trans-box {
+            width: 428px;
+            height: auto;
+            
+            .head {
+              height: 88px;
+              width: 100%;
+              background: linear-gradient(90deg, #3b5999, #34acac);
+              border-radius: 16px 16px 0 0;
+              text-align: center; 
+              padding: 16px;
+              p {
+                  font-size: 16px;
+                  margin: 0;
+                  display: block;
+                  color: #ffffff;
+                  &:last-child {
+                      font-size: 24px;
+                      font-family: f-bold;
+                  }
+              }
+            }
+            .content {
+              height: auto;
+              width: 100%;
+              background-color: #ffffff;
+              border-radius:0 0 16px 16px;
+              padding: 32px;
+              display: grid;
+              gap: 10px;
+              .group-select {
+                  width: 100%; 
+                  display: grid;
+                  grid-template-columns: 2fr 1fr; 
+                  .amt {
+                      padding: 16px;
+                      border: 2px solid #3b5999;
+                      background-color: #fff;
+                      border-top-left-radius: 8px;
+                      border-bottom-left-radius: 8px;
+                      span {
+                          font-size: 16px;
+                          margin: 0;
+                      }
+                      p {
+                          font-size: 2rem;
+                          margin: 0;
+                          font-family: f-bold;
+                      }
+                  }
+                  .form-select {
+                      background-color: #3b5999;
+                      border: 2px solid #3b5999;
+                      color: #ffffff;
+                      font-size: 20px !important;
+                      font-family: f-bold;
+                      border-radius: 0 !important;
+                      border-top-right-radius: 8px !important;
+                      border-bottom-right-radius: 8px !important;
+                  }
+              }
+              .mode_receipt {
+                  display: flex;
+                  justify-content: space-between;
+                  gap: 10px;
+                  align-items: center;
+                  p {
+                      font-size: 16px;
+                      margin: 0;
+                      color: #000000;
+                      font-weight: bold;
+                  }
+                  .form-select {
+                      height: 52px;
+                      width: 182px;
+                      min-width: 182px;
+                      border: solid 2px #3b5999;
+                      border-radius: 4px !important;
+                      font-size: 16px;
+                      font-weight: bold;
+                      --bs-form-select-bg-img: url(/assets/images/svg/chevron-down-dark.svg);
+                  }
+              }
+              .summary {
+                .line {
+                    display: flex;
+                    justify-content: space-between;
+                    span {
+
+                        &:first-child {
+                            font-weight: bold;
+                        }
+                        &:last-child {
+                            font-family: f-bold;
+                        }
+                        &.lab-visible {
+                            color: #3b5999; 
+                        }
+                    }
+                }
+              }
+              .btn-primary {
+                  height: 56px;
+                  width: 100%;
+                  font-size: 20px !important;
+                  font-family: f-bold;
+                  background-color: #3b5999;
+                  border: none;
+              }
+              .btn-link {
+                padding: 0;
+                font-family: f-bold;
+                color: #777777;
+              }
+            }
+          }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .full-calculator .hero-section .content-hero {
+    padding: 80px 20px 0;
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+    background-color: #5374b9;
+  }
+  .full-calculator .hero-section .left {
+    padding: 0 20px;
+  }
+  .full-calculator .hero-section .left h1 {
+    font-size: 40px;
+  }
+  .full-calculator .hero-section .left b {
+    font-size: 24px;
+  }
+  .full-calculator .hero-section .left .licence {
+    display: grid;
+  }
+  .full-calculator .hero-section .right {
+    .trans-box {
+        width: 100%; 
+        .content {
+            border-radius: 0;
+            padding: 20px;
+        }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .full-calculator .hero-section .content-hero {
+    padding: 80px 0 0;
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+    background-color: #5374b9;
+  }
+  .full-calculator .hero-section .left {
+    padding: 0 20px;
+  }
+  .full-calculator .hero-section .left h1 {
+    font-size: 40px;
+  }
+  .full-calculator .hero-section .left b {
+    font-size: 24px;
+  }
+  .full-calculator .hero-section .left .licence {
+    display: grid;
+  }
+  .full-calculator .hero-section .right {
+    .trans-box {
+        width: 100%; 
+        .content {
+            border-radius: 0;
+            padding: 20px;
+        }
+    }
+  }
+}

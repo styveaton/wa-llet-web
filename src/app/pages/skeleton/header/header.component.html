@@ -1,0 +1,97 @@
+<div class="header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid ps-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img src="assets/images/svg/list.svg" alt="" />
+            </button>
+
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/png/logo_512.png" alt="WaLletWeb" />
+            </a>
+            <div class="d-web">
+                <select class="form-select" (change)="onChangeLangue($event)">
+                   
+                    <option   *ngFor="let item of langues" [value]="item.value" [selected]="item.value===activeLangue">{{item.text }}</option>
+               
+                </select>
+            </div>
+            <div class="d-mobile">
+                <a class="nav-link" (click)="openViewLogin()">{{applyText('md_header_text_3') }}</a>
+                <a class="nav-link btn-primary" (click)="openViewRegistration()">{{applyText('md_header_text_4') }}</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" (click)="openViewCommentCaMarche()">{{applyText('md_header_text_5') }}</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" (click)="openViewAide()">{{applyText('md_header_text_6') }}</a>
+                    </li>-->
+                    <!-- <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link" (click)="openViewLogin()">{{applyText('md_header_text_7') }}</a>
+                    </li>
+
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link btn-primary" (click)="openViewRegistration()">{{applyText('md_header_text_8') }}</a>
+                    </li> -->
+
+                    <!--li class="nav-item">
+                        <a class="nav-link" title="Transactions" (click)=" openViewTransaction()">{{applyText('md_header_text_9') }}</a>
+                    </li>-->
+                    <!--li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                {{applyText('md_header_text_10') }} 
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>{{applyText('md_header_text_11') }}</li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" title="Recommander un ami" (click)=" openViewSponsor()">{{applyText('md_header_text_12') }}</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item"  title="Mes Transactions" (click)=" openViewTransaction()">{{applyText('md_header_text_13') }}</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" title="Mes informations" (click)="openViewInformations()">{{applyText('md_header_text_14') }}</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">{{applyText('md_header_text_15') }}</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li-->
+                                <!--li><a class="dropdown-item" href="#">{{applyText('md_header_text_16') }}</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">{{applyText('md_header_text_17') }}</a></li>
+                            </ul>
+                        </div>
+                    </li-->
+                    <li class="nav-item d-lg-none">
+                        <select class="form-select"(change)="onChangeLangue($event)">
+                   
+                            <option   *ngFor="let item of langues" [value]="item.value" [selected]="item.value===activeLangue">{{item.text }}</option>
+                       
+                     
+                            <!--option selected>Français</option>
+                            <option value="1">Dansk</option>
+                            <option value="2">Deutsch</option>
+                            <option value="3">English</option>
+                            <option value="4">Espagnol</option>
+                            <option value="5">Français</option>
+                            <option value="6">Nederlands</option-->
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

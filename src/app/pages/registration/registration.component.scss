@@ -1,0 +1,147 @@
+.registration {
+  padding: 50px 0px;
+  width: 100%;
+  .content {
+    padding: 0px 120px;
+    width: 55%;
+    max-width: 1600px;
+    margin: auto;
+    h2 {
+      font-family: f-bold;
+      font-size: 32px;
+      margin: 0 0 40px;
+      text-align: center;
+    }
+    p {
+      font-family: f-bold;
+      font-size: 18px;
+      margin: 0 0 5px;
+      &.text-privacy {
+        font-size: 16px;
+        font-family: f-normal;
+        margin: 30px 0 30px;
+      }
+      &.text-connexion {
+        font-size: 16px;
+        font-family: f-normal;
+        margin: 30px 0 80px;
+        text-align: center;
+      }
+      a {
+        color: #3b5999;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+    form {
+      div {
+        margin: 0 0 25px;
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+          height: 50px;
+          border-radius: 3px;
+          font-weight: bold;
+        }
+        select {
+          background-image: url(/assets/images/svg/chevron-down-dark.svg);
+          background-position: 97% 50%;
+          background-repeat: no-repeat;
+          background-size: 18px;
+        }
+        &.form-switch {
+          display: flex;
+          padding: 0;
+          gap: 50px;
+          .form-check-label {
+            font-weight: bold;
+            font-size: 16px;
+          }
+          .form-check-input {
+            width: 45px;
+            height: 20px;
+          }
+        }
+        &.form-box {
+          display: flex;
+          gap: 20px;
+          width: 100%;
+          .form-check-label {
+            font-size: 14px;
+          }
+          input[type="checkbox"] {
+            width: 24px;
+            height: 24px;
+            border-radius: 0;
+          }
+        }
+      }
+      .btn-primary {
+        height: 56px;
+        width: 100%;
+        background-color: #3b5999;
+        font-size: 20px;
+        font-family: f-bold;
+        color: #ffffff;
+        border: none;
+      }
+    }
+  }
+  .foot {
+    padding: 0px 120px;
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    p {
+      width: 60%;
+      margin: 40px auto 0;
+      text-align: center;
+      font-size: 14px;
+      color: #999999;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .registration .content {
+    padding: 0px 20px;
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+  }
+  .registration .content h2 {
+    font-family: f-bold;
+    font-size: 32px;
+    margin: 0 0 30px;
+    text-align: left;
+  }
+  .registration .foot {
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .registration .content {
+    padding: 0px 20px;
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+  }
+  .registration .content h2 {
+    font-family: f-bold;
+    font-size: 32px;
+    margin: 0 0 30px;
+    text-align: left;
+  }
+  .registration .foot {
+    padding: 0px 20px;
+  }
+  .registration .foot p {
+    width: 100%;
+    margin: 40px auto 0;
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+  }
+}

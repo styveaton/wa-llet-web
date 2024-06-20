@@ -1,0 +1,695 @@
+.reviews {
+  padding: 0;
+  width: 100%;
+  .how-to {
+    padding: 0;
+    width: 100%;
+    .content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+
+      .left {
+        padding: 0 120px;
+        width: 50%;
+        h3 {
+          font-size: 40px;
+          font-family: f-bold;
+          margin: 0 0 16px;
+        }
+        p {
+          font-size: 20px;
+          line-height: 1.25;
+          margin: 0 0 16px;
+          font-weight: bold;
+        }
+        a {
+          font-size: 20px;
+          color: #3b5999;
+        }
+        .btn-primary {
+          height: 56px;
+          font-family: f-bold;
+          font-size: 20px !important;
+          background-color: #3b5999 !important;
+          border: none;
+          margin: 16px 0 0;
+        }
+      }
+      .right {
+        background-color: #5374b9;
+        min-height: 800px;
+        width: 50%;
+        background-image: url(/assets/images/jpg/home-4.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  .why-us {
+    padding: 50px 0px;
+    width: 100%;
+    background: linear-gradient(90deg, #3b5999, #0f285f);
+    .content {
+      padding: 0 120px;
+      width: 100%;
+      max-width: 1600px;
+      margin: auto;
+      h2 {
+        font-size: 40px;
+        margin: 0 0 32px;
+        font-family: f-bold;
+        text-align: center;
+        color: #ffffff;
+      }
+      .line-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 80px;
+        .block {
+          text-align: center;
+          img {
+            width: 64px;
+            height: 64px;
+            margin: 0 0 16px;
+          }
+          h2 {
+            font-size: 32px;
+            font-family: f-bold;
+            color: #ffffff;
+            margin: 0 0 8px;
+          }
+          p {
+            font-size: 16px;
+            color: #ffffff;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .reviews-section {
+    padding: 104px 0px;
+    width: 100%;
+    background-color: #e9fde9;
+    .content {
+      padding: 0 120px;
+      width: 100%;
+      max-width: 1600px;
+      margin: auto;
+      img {
+        height: 40px;
+        width: auto;
+      }
+      .rated {
+        display: flex;
+        width: fit-content;
+        align-items: center;
+        gap: 25px;
+        span {
+          font-size: 24px;
+          font-weight: bold;
+        }
+        .list-inline {
+          margin: 0;
+          display: flex;
+          gap: 5px;
+          .list-inline-item {
+            background-color: #ffc107;
+            padding: 2px;
+            margin: 0;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 20px;
+              height: 20px;
+            }
+            span {
+              font-size: 24px;
+              font-weight: bold;
+            }
+            &:last-child {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+      hr.vertical {
+        border: 0;
+        border-left: solid 2px #000000;
+        opacity: 1;
+        height: 32px;
+      }
+      .slick-slider {
+        display: grid;
+        gap: 24px;
+        .controls {
+          display: flex;
+          gap: 5px;
+          .btn-link {
+            text-decoration: none;
+            font-family: f-bold;
+            font-size: 24px !important;
+            color: #3b5999;
+            height: 40px;
+            width: 40px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              width: 40px !important;
+              height: 40px !important;
+            }
+          }
+        }
+        .s-slides {
+          width: 100%;
+          overflow: hidden;
+          overflow-x: scroll;
+          padding: 0 0 10px;
+          &::-webkit-scrollbar {
+            height: 10px;
+            border-radius: 0;
+            background-color: #e9fde9;
+            padding: 2px;
+            position: relative;
+            top: 5px;
+          }
+          &::-webkit-scrollbar-thumb {
+            height: 100%;
+            border-radius: 10px;
+            background-color: #83be83;
+          }
+
+          .content {
+            gap: 24px;
+            display: flex;
+            padding: 0;
+            width: fit-content;
+          }
+          .card {
+            padding: 24px;
+            width: 270px;
+            height: fit-content;
+            background-color: #ffffff;
+            display: grid;
+            gap: 8px;
+            .r-title {
+              font-family: f-bold;
+              font-size: 16px;
+              color: #000000;
+              margin: 0;
+              line-height: 1.25;
+            }
+            .r-content {
+              font-size: 16px;
+              color: #000000;
+              margin: 0;
+            }
+            .list-inline {
+              margin: 0;
+              display: flex;
+              gap: 5px;
+              .list-inline-item {
+                background-color: #a7e168;
+                padding: 2px;
+                margin: 0;
+                width: 24px;
+                height: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                  width: 15px;
+                  height: 15px;
+                }
+              }
+            }
+            .r-lib {
+              font-size: 16px;
+              color: #666666;
+              margin: 0;
+            }
+            .r-date {
+              font-size: 16px;
+              color: #000000;
+              margin: 0;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              img {
+                width: 20px;
+                height: 20px;
+              }
+            }
+            .btn-primary {
+              border: solid 2px #ffffff;
+              background-color: transparent;
+              font-family: f-bold;
+              font-size: 16px !important;
+              width: 55%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .how-to-two {
+    padding: 0;
+    width: 100%;
+    .content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      .left {
+        padding: 0 120px;
+        width: 50%;
+        h3 {
+          font-size: 32px;
+          font-family: f-bold;
+          margin: 0 0 16px;
+        }
+        p {
+          font-size: 20px;
+          font-weight: bold;
+          margin: 0 0 16px;
+          line-height: 1.25;
+        }
+        .btn-primary {
+          height: 56px;
+          font-family: f-bold;
+          font-size: 20px !important;
+          background-color: #3b5999 !important;
+          border: none;
+          margin: 16px 0 0;
+        }
+      }
+      .right {
+        background-color: #5374b9;
+        min-height: 500px;
+        width: 50%;
+        background-image: url(/assets/images/jpg/wallet-app-bg-1.JPG);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  .how-to-send-money {
+    padding: 50px 0;
+    max-width: 1600px;
+    margin: auto;
+    .content {
+      padding: 0 120px;
+      h2 {
+        font-size: 32px;
+        font-family: f-bold;
+        color: #000000;
+        margin: 0 0 16px;
+        text-align: center;
+      }
+      .block {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        .card {
+          width: 100%;
+          height: fit-content;
+          background-color: #f3f5ff;
+          padding: 24px;
+          border-radius: 8px;
+          display: grid;
+          border: none;
+          justify-items: center;
+          text-align: center;
+          img {
+            width: 100%;
+            height: auto;
+            margin: 0 0 16px;
+          }
+          h3 {
+            font-size: 20px;
+            color: #3b5999;
+            font-family: f-bold;
+          }
+          p {
+            font-size: 16px;
+            margin: 0;
+            font-weight: bold;
+            line-height: 1.25;
+            a {
+              color: #3b5999;
+              font-family: f-bold;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+  .app-section {
+    padding: 104px 0px;
+    width: 100%;
+    background-color: #e9fde9;
+    .content {
+      padding: 0px 120px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      max-width: 1600px;
+      margin: auto;
+      .left {
+        display: flex;
+        justify-content: center;
+      }
+      .right {
+        h2 {
+          font-size: 32px;
+          font-family: f-bold;
+          margin: 0 0 8px;
+          line-height: 1.25;
+        }
+        p {
+          font-size: 20px;
+          font-weight: bold;
+          margin: 0 0 32px;
+          line-height: 1.25;
+        }
+        .download_app {
+          display: flex;
+          gap: 20px;
+          .btn-link {
+            text-decoration: none;
+            padding: 0 !important;
+            img {
+              width: 135px !important;
+              height: 40px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .faq {
+    padding: 24px 0px 32px;
+    background-color: #5374b9;
+    width: 100%;
+    .content {
+      padding: 0px 120px;
+      width: 100%;
+      text-align: center;
+      max-width: 1600px;
+      margin: auto;
+      h2 {
+        font-size: 40px;
+        font-family: f-bold;
+        margin: 0 0 24px;
+        color: #ffffff;
+      }
+      .accordion {
+        margin: 0 0 24px;
+        .accordion-item {
+          border: none;
+        }
+        .accordion-header {
+          margin: 0;
+          .accordion-button {
+            font-weight: bold;
+          }
+          .accordion-button::after {
+            background-image: url(/assets/images/svg/plus-lg.svg);
+          }
+          .accordion-button:not(.collapsed) {
+            background-color: #ffffff;
+            border-radius: 0 !important;
+            border-top-right-radius: 5px !important;
+            border-top-left-radius: 5px !important;
+            border: none;
+          }
+          .accordion-button:not(.collapsed)::after {
+            background-image: url(/assets/images/svg/dash-lg.svg);
+          }
+        }
+        .accordion-collapse {
+          .accordion-body {
+            border-left: solid 4px #3b5999;
+            text-align: left;
+            background-color: #eeeeee;
+          }
+        }
+      }
+      .btn-light {
+        font-size: 20px !important;
+        font-family: f-bold;
+        width: 350px;
+        margin: auto;
+        height: 56px;
+        color: #3b5999;
+        border: none;
+        &:hover {
+          color: #ffffff;
+          background-color: #1c3467;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews .how-to {
+    padding: 0;
+  }
+  .reviews .how-to .content {
+    width: 100%;
+    display: grid;
+    align-items: center;
+  }
+  .reviews .how-to .content .right {
+    min-height: 150px;
+    width: 100%;
+  }
+  .reviews .how-to .content .left {
+    padding: 16px 20px;
+    width: 100%;
+  }
+  .reviews .why-us .content {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .reviews .why-us .content h2 {
+    font-size: 32px;
+  }
+  .reviews .why-us .content .line-block {
+    grid-template-columns: 1fr;
+  }
+  .reviews .reviews-section {
+    padding: 56px 0px !important;
+    .content {
+      padding: 0 20px !important;
+    }
+  }
+  .reviews .reviews-section .content .rated {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 16px;
+  }
+  .reviews .reviews-section .content .slick-slider .s-slides .content {
+    padding: 0 !important;
+  }
+  .reviews .how-to-two {
+    padding: 0;
+  }
+  .reviews .how-to-two .content {
+    width: 100%;
+    display: grid;
+    align-items: center;
+  }
+  .reviews .how-to-two .content .right {
+    min-height: 150px;
+    width: 100%;
+  }
+  .reviews .how-to-two .content .left {
+    padding: 16px 20px;
+    width: 100%;
+  }
+  .reviews .how-to-send-money .content {
+    padding: 0 20px;
+  }
+  .reviews .how-to-send-money .content .block {
+    grid-template-columns: 1fr;
+  }
+  .reviews .how-to-send-money .content .block .card {
+    justify-items: start;
+    text-align: left;
+  }
+  .reviews .how-to-send-money .content .block .card img {
+    display: none;
+  }
+  .reviews .app-section {
+    padding: 24px 0px 60px;
+  }
+  .reviews .app-section .content {
+    padding: 0px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column-reverse;
+    .left {
+      margin: auto;
+      img {
+        width: 100%;
+        height: 460px;
+      }
+    }
+  }
+  .reviews .app-section .content .right .download_app {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .reviews .app-section .content .right h2 {
+    text-align: center;
+  }
+  .reviews .app-section .content .right p {
+    text-align: center;
+  }
+  .reviews .faq .content {
+    padding: 0px 20px;
+  }
+  .reviews .faq .content h2 {
+    font-size: 32px;
+  }
+  .reviews .faq .content .btn-light {
+    width: 100%;
+  }
+  .reviews .how-to-two .content .left .btn-primary {
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .reviews .how-to {
+    padding: 0;
+  }
+  .reviews .how-to .content {
+    width: 100%;
+    display: grid;
+    align-items: center;
+  }
+  .reviews .how-to .content .right {
+    min-height: 150px;
+    width: 100%;
+  }
+  .reviews .how-to .content .left {
+    padding: 16px 20px;
+    width: 100%;
+  }
+  .reviews .why-us .content {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .reviews .why-us .content h2 {
+    font-size: 32px;
+  }
+  .reviews .why-us .content .line-block {
+    grid-template-columns: 1fr;
+  }
+  .reviews .reviews-section {
+    padding: 56px 0px !important;
+    .content {
+      padding: 0 20px !important;
+    }
+  }
+  .reviews .reviews-section .content .rated {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 16px;
+  }
+  .reviews .reviews-section .content .slick-slider .s-slides .content {
+    padding: 0 !important;
+  }
+  .reviews .how-to-two {
+    padding: 0;
+  }
+  .reviews .how-to-two .content {
+    width: 100%;
+    display: grid;
+    align-items: center;
+  }
+  .reviews .how-to-two .content .right {
+    min-height: 150px;
+    width: 100%;
+  }
+  .reviews .how-to-two .content .left {
+    padding: 16px 20px;
+    width: 100%;
+  }
+  .reviews .how-to-send-money .content {
+    padding: 0 20px;
+  }
+  .reviews .how-to-send-money .content .block {
+    grid-template-columns: 1fr;
+  }
+  .reviews .how-to-send-money .content .block .card {
+    justify-items: start;
+    text-align: left;
+  }
+  .reviews .how-to-send-money .content .block .card img {
+    display: none;
+  }
+  .mobile-app .app-section {
+    padding: 24px 0px 60px;
+  }
+  .mobile-app .app-section .content {
+    padding: 0px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column-reverse;
+    .left {
+      margin: auto;
+      img {
+        width: 100%;
+        height: 460px;
+      }
+    }
+  }
+  .reviews .app-section .content .right .download_app {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .reviews .app-section .content .right h2 {
+    text-align: center;
+  }
+  .reviews .app-section .content .right p {
+    text-align: center;
+  }
+  .reviews .faq .content {
+    padding: 0px 20px;
+  }
+  .reviews .faq .content h2 {
+    font-size: 32px;
+  }
+  .reviews .faq .content .btn-light {
+    width: 100%;
+  }
+  .reviews .how-to-two .content .left .btn-primary {
+    height: auto;
+  }
+}
