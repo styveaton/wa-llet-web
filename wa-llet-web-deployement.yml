@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wa-llet-web-deployment
+spec:
+  selector:
+    matchLabels:
+      app: wa-llet-web
+  replicas: 2 # Adjust the number of replicas as needed
+  template:
+    metadata:
+      labels:
+        app: wa-llet-web
+    spec:
+      containers:
+      - name: wa-llet-web
+        image: aton85/wa-llet-web-image:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80 # Assuming the Angular app serves on port 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: wa-llet-web-service
+spec:
+  selector:
+    app: wa-llet-web
+  ports:
+  - protocol: "TCP"
+    port: 8073
+    targetPort: 8073
+  type: LoadBalancer
