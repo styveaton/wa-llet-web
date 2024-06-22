@@ -29,5 +29,5 @@ spec:
   ports:
   - protocol: "TCP"
     port: 8073
-    targetPort: 8073
+    targetPort: 80
   type: LoadBalancer
