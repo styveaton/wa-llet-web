@@ -1,0 +1,29 @@
+Yves Apollinaire Tondje Binam
+	
+Mon, Jul 8, 5:00 PM (3 days ago)
+	
+to me
+https://drive.google.com/file/d/1m3ob6V5L3qDviv7os_1u9Gcv8qTrrzgW/view?usp=sharing
+
+configuration
+pour un telephone 2 puces
+
+{"slots":[{"otp":"9318","command":"#149*1*AMT*PHN#","ligne":"ORANGE_1","phone":"686885935","operateur":"237OM","slot": 0},
+{"otp":"91207","command":"*126*1*PHN*AMT#","ligne":"MTN_1","phone":"682841570","operateur":"237MOMO","slot": 1}],
+"queue":"wallet_transfert_12345","route":"wallet_transfert_routing","agent":"12345","auto":true}
+
+pour les telephone 1 puce on aura une seule config dans le slot
+
+A noter que 
+
+237MOMO et 237OM sont les code respectif pour les compte marchand 
+
+mais 237OM_CLIENT et 237MOMO_CLIENT sont les code pour les puce simple
+
+
+donc pour une configuration classique on doit avoir
+
+
+{"slots":[{"otp":"0918","command":"#150*1*1*PHN*AMT#","ligne":"ORANGE_1","phone":"686885935","operateur":"237OM","slot": 0},
+{"otp":"19955","command":"*126#","ligne":"MTN_1","phone":"682841570","operateur":"237MOMO","slot": 1}],
+"queue":"wallet_transfert_12345","route":"wallet_transfert_routing","agent":"12345","auto":true}
