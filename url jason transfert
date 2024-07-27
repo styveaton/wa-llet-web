@@ -27,3 +27,12 @@ donc pour une configuration classique on doit avoir
 {"slots":[{"otp":"0918","command":"#150*1*1*PHN*AMT#","ligne":"ORANGE_1","phone":"686885935","operateur":"237OM","slot": 0},
 {"otp":"19955","command":"*126#","ligne":"MTN_1","phone":"682841570","operateur":"237MOMO","slot": 1}],
 "queue":"wallet_transfert_12345","route":"wallet_transfert_routing","agent":"12345","auto":true}
+
+
+
+
+good Donnee
+
+{"slots":[{"otp":"1985","command":"#150*1*1*PHN*AMT#","ligne":"ORANGE_0","phone":"659570149","operateur":"237OM_CLIENT","slot": 0},
+{"otp":"19955","command":"*126#","ligne":"MTN_0","phone":"681489591","operateur":"237MOMO_CLIENT","slot": 1}],
+"queue":"wallet_transfert_12345","route":"wallet_transfert_routing","agent":"12345","auto":true}
